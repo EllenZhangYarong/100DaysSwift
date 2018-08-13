@@ -1,0 +1,95 @@
+Udacity course
+
+# Plan
+
+## what makes a "good" IOS App?
+
+-  easy to use
+-  贴近生活，越大众越好
+-  受众广泛
+
+## Personal Motivation
+- Contact with friends via virtual world. And want to know their recent situation. And what they are doing.
+- Where are there frustrations or pain points in your life? How might an app help alleviate them?
+-   	No job. Job app not help a lot because fake news too much.
+-   	Not good at cooking, take-out and delivery app help a lot.
+
+## Share your idea and get feed back
+
+## Defining UI Elements
+- Are there components that will ue custom table view cell or collection view cells?
+- Are there view controllers that will be presented using navigation, or modal presentation?
+- Are there components that you do not know how to implement? What are they?
+
+## Sketch and Share UI Elements and get feed back
+
+##Find & Vet Web APIs
+- What goes into constructing URL's for there resources?
+- Get a sample of the JSON or XML that will be returned by a network API that you are considering using. What is the structure of the data?
+- Are you considering any resources that require user authentication? Give a brief description of the login precedure.
+
+
+# Build
+
+## Define Features For Your App
+- Do you have competitors?
+- Who are your users?
+- Other features?
+
+## Feature List Ranking System
+- Required: must be included
+- Reasonable: can implement
+- Ambitious: nice-to-have
+
+# Choose Key Features
+
+Scrutinize your feature list and be aggressive in cutting features so you end up with an app that’s streamlined and achievable. Your final list should include all of the app’s required features, and perhaps a couple of the reasonable ones that you really want to implement. It should also meet the following criteria for submission in the iOS Developer Nanodegree:
+
+- Contain a user interface with multiple pages of content
+- Interact with a web service (API)
+- Encapsulate a persistence mechanism in the model
+
+Keep in mind that cutting features now doesn’t mean you’ll never add them. It’s a good idea to keep your list around for potential updates.
+
+# How Confident Are You?
+
+Now that you've selected an idea to pursue: how confident are you that you can complete it?
+
+Consider the following list of skills that you will need to create your app. Are there items in which you are less confident than others? Post your thoughts to the forums.
+
+- Developing nice graphic design
+- Building the user interface with UIKit
+- Downloading data from an API
+- Persisting the data
+- Working through problems and bug to get the app working well.
+- Posting the app to the App Store (if you are planning on that)
+
+## Get feedback on your paper prototype
+
+## Refine your paper prototype
+
+## Estimate required time to implemet features
+
+## Follow your Timeline
+
+## Share prototype to people
+
+## User testing
+
+## What Will You Need to Submit to the App Store?
+
+If you plan to submit your app to the App Store, then there are a few things you'll need to prepare before doing so. They're listed below, and we'll talk about how to go about preparing them in the next sections:
+
+- Assets (Icons, screen shots, description prose, launch image)
+- Certificate
+- App ID
+- Provisioning profile
+- Archive
+- Signing up as an iOS Developer
+
+In order to publish your app to the App Store, you need to be a member of Apple's iOS Developer Program. It will cost you US$99 for an annual membership, and you can sign up here.
+
+Note: This process can take 1-2 business days as Apple processes your membership. You can still work on the assets while you wait.
+
+
+

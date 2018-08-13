@@ -1,0 +1,101 @@
+Udacity course
+
+Starting Our Concept List
+Let’s add the first term to our list. What do we mean by “the network”?
+
+We use “the network” to refer to the internet—the global system of interconnected computer networks that many of us interact with everyday. If you think about it, the internet is composed of many small networks like the one in your home, office networks, and networks that connect neighborhoods and cities. By using “the network”, we have access to a wealth of information at our fingertips.
+
+Concept List
+Network — the global system of interconnected computer networks from which we can access data.
+Network — the system of interconnected computer networks from which we can access data.
+
+Data — images, text, video, or any media that can be used by our apps.
+
+Protocol — a way of communicating; standard operating procedure; the rules for communication
+
+HTTP (Hypertext Transfer Protocol) — a protocol or “handshake” that defines how messages (and data) are sent and received by computers; the underlying protocol for the World Wide Web
+
+Client — a computer that requests data (or services) from a server
+
+Server — a computer that provides data (or services) to a client upon request
+
+HTTP request — a request for data (or a resource) that a client makes to a server; there are various types of HTTP requests called “HTTP methods”
+
+URL (Uniform Resource Locator) — specifies the location for retrieving data over the web; can be thought of as the name of a file on the World Wide Web, because it usually refers to a file on some machine on the network
+
+HTTP method — specifies the type of HTTP request that is being made; in this course, we will also call these (HTTP) request types
+
+HTTP status code — a number returned in response to an HTTP request which indicates the result of the request; you may also hear these referred to as “response codes” or “status messages." Here is a nice listing of different HTTP status codes. (https://httpstatuses.com/)
+
+1×× Informational
+100 Continue
+101 Switching Protocols
+102 Processing
+2×× Success
+200 OK
+201 Created
+202 Accepted
+203 Non-authoritative Information
+204 No Content
+205 Reset Content
+206 Partial Content
+207 Multi-Status
+208 Already Reported
+226 IM Used
+3×× Redirection
+300 Multiple Choices
+301 Moved Permanently
+302 Found
+303 See Other
+304 Not Modified
+305 Use Proxy
+307 Temporary Redirect
+308 Permanent Redirect
+4×× Client Error
+400 Bad Request
+401 Unauthorized
+402 Payment Required
+403 Forbidden
+404 Not Found
+405 Method Not Allowed
+406 Not Acceptable
+407 Proxy Authentication Required
+408 Request Timeout
+409 Conflict
+410 Gone
+411 Length Required
+412 Precondition Failed
+413 Payload Too Large
+414 Request-URI Too Long
+415 Unsupported Media Type
+416 Requested Range Not Satisfiable
+417 Expectation Failed
+418 I'm a teapot
+421 Misdirected Request
+422 Unprocessable Entity
+423 Locked
+424 Failed Dependency
+426 Upgrade Required
+428 Precondition Required
+429 Too Many Requests
+431 Request Header Fields Too Large
+444 Connection Closed Without Response
+451 Unavailable For Legal Reasons
+499 Client Closed Request
+5×× Server Error
+500 Internal Server Error
+501 Not Implemented
+502 Bad Gateway
+503 Service Unavailable
+504 Gateway Timeout
+505 HTTP Version Not Supported
+506 Variant Also Negotiates
+507 Insufficient Storage
+508 Loop Detected
+510 Not Extended
+511 Network Authentication Required
+599 Network Connect Timeout Error
+
+HTTP GET request — a type of HTTP request where a client requests a specified resource from a server
+
+
