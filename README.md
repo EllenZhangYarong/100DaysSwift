@@ -1,6 +1,8 @@
 # 100DaysSwift
 
 ## 2018-08-14
+
+- [iOS Tab Bar Controller Tutorial](https://www.youtube.com/watch?v=yzImO9HdbFo)
 - Learn about the <em>UITABCONTROLLER</em>> and how to use it
 - Learn how to combine <em>TAB CONTROLLERS</em>> and <em>NAVIGATION CONTROLLERS</em>
 - Learn how to change the <em>STARTUP TAB</em> in a <em>TAB CONTROLLER</em>
