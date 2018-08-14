@@ -9,5 +9,4 @@
 - Learn how to change the <em>STARTUP TAB</em> in a <em>TAB CONTROLLER</em>
 - Learn how to pass variable between <em>VIEWCONTROLLERS</em>
 
-![TabBarController+NavigationController+Pass Variable between ViewController]
-(./images/tab_nav_pass.png)
+![pic of TabbedPageStudy user interface](images/tab_nav_pass.png)
