@@ -10,4 +10,4 @@
 - Learn how to pass variable between <em>VIEWCONTROLLERS</em>
 
 ![TabBarController+NavigationController+Pass Variable between ViewController]
-(images/TabbedPageStudy)
+(images/TabbedPageStudy.png)
