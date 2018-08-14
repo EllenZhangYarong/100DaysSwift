@@ -10,14 +10,30 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    var userName: String?
+    var userPassword: String?
+    
+    @IBAction func onLogoutTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        print(userName!)
+        print(userPassword!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let detailViewController = segue.destination as? DetailViewController{
+            detailViewController.userName = userName
+            detailViewController.userPassword = userPassword
+        }
     }
 
 

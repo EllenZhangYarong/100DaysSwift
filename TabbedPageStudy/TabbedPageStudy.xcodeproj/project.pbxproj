@@ -13,6 +13,10 @@
 		9B9F4BC7212243970007C14F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F4BC5212243970007C14F /* Main.storyboard */; };
 		9B9F4BC9212243990007C14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F4BC8212243990007C14F /* Assets.xcassets */; };
 		9B9F4BCC212243990007C14F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F4BCA212243990007C14F /* LaunchScreen.storyboard */; };
+		9B9F4BD4212264970007C14F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F4BD3212264970007C14F /* LoginViewController.swift */; };
+		9B9F4BDA2122661B0007C14F /* HomePageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F4BD92122661B0007C14F /* HomePageNavigationController.swift */; };
+		9B9F4BDC212266520007C14F /* HomePageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F4BDB212266520007C14F /* HomePageTabBarController.swift */; };
+		9B9F4BDE212278700007C14F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F4BDD212278700007C14F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9B9F4BC8212243990007C14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B9F4BCB212243990007C14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B9F4BCD212243990007C14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9F4BD3212264970007C14F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B9F4BD92122661B0007C14F /* HomePageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageNavigationController.swift; sourceTree = "<group>"; };
+		9B9F4BDB212266520007C14F /* HomePageTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTabBarController.swift; sourceTree = "<group>"; };
+		9B9F4BDD212278700007C14F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				9B9F4BC8212243990007C14F /* Assets.xcassets */,
 				9B9F4BCA212243990007C14F /* LaunchScreen.storyboard */,
 				9B9F4BCD212243990007C14F /* Info.plist */,
+				9B9F4BD3212264970007C14F /* LoginViewController.swift */,
+				9B9F4BD92122661B0007C14F /* HomePageNavigationController.swift */,
+				9B9F4BDB212266520007C14F /* HomePageTabBarController.swift */,
+				9B9F4BDD212278700007C14F /* DetailViewController.swift */,
 			);
 			path = TabbedPageStudy;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9F4BD4212264970007C14F /* LoginViewController.swift in Sources */,
+				9B9F4BDA2122661B0007C14F /* HomePageNavigationController.swift in Sources */,
 				9B9F4BC4212243970007C14F /* SecondViewController.swift in Sources */,
+				9B9F4BDC212266520007C14F /* HomePageTabBarController.swift in Sources */,
 				9B9F4BC0212243970007C14F /* AppDelegate.swift in Sources */,
 				9B9F4BC2212243970007C14F /* FirstViewController.swift in Sources */,
+				9B9F4BDE212278700007C14F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
