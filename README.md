@@ -10,3 +10,17 @@
 - Learn how to pass variable between <em>VIEWCONTROLLERS</em>
 
 ![pic of TabbedPageStudy user interface](images/tab_nav_pass.png)
+
+## 2018-08-19
+
+- UITest
+- UIPicker
+- Alamofire and SwiftyJSON
+
+- <strong>Pod intall library</strong>
+1. pod init
+2. subl Podfile
+3. pod install
+4. open .xcworkspace
+5. import library
+
