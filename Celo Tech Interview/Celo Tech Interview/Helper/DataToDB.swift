@@ -1,6 +1,8 @@
 //
-//  DoctorsToDBAndCache.swift
+//  DataToDB.swift
 //  Celo Tech Interview
+//
+//  Get data from URL and save to local sqlite db
 //
 //  Created by Ellen Zhang on 7/11/19.
 //  Copyright © 2019 Ellen Zhang. All rights reserved.
@@ -10,16 +12,17 @@ import Foundation
 import UIKit
 import CoreData
 
-
-
-public class DoctorsToDBAndCache {
+public class DataToDB {
     
     var arrayDocs:[Doctors]=[]
     var listOfDocs: [DoctorDetail]=[]
     var doctors: [Doctors] = []
-
+    
+    
+    /// Get data from Restful API
+    /// - Parameter numberOfDocs: number of data
     func getDataFromAPI(numberOfDocs: String){
-        let doctorsRequest = DoctorsRequest(numberOfDocs: numberOfDocs)
+        let doctorsRequest = DataRequest(numberOfDocs: numberOfDocs)
         doctorsRequest.getDoctors{ result in
             switch result{
                 case .failure(let error):
@@ -35,6 +38,10 @@ public class DoctorsToDBAndCache {
         }
     }
     
+    
+    
+    /// save data into local sqlite
+    /// - Parameter listOfDocs: list of data
     func saveDataToDB(listOfDocs: [DoctorDetail]){
         DispatchQueue.main.async {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
@@ -42,13 +49,13 @@ public class DoctorsToDBAndCache {
         }
         let context = appDelegate.persistentContainer.viewContext
 
-        
 //        print(listOfDocs)
         
         for i in 0..<listOfDocs.count {
-//            let doctor = Doctors(context: context)
+
             let doctor = Doctors.init(context: context)
             
+            // Match DB properties and JSON
             doctor.cell = listOfDocs[i].cell
             doctor.phone = listOfDocs[i].phone
             doctor.gender = listOfDocs[i].gender
@@ -69,15 +76,12 @@ public class DoctorsToDBAndCache {
             doctor.city = listOfDocs[i].location.city
             doctor.state = listOfDocs[i].location.state
             doctor.country = listOfDocs[i].location.country
-            
-
-            
+                        
             self.arrayDocs.append(doctor)
 //            print(arrayDocs)
         }
-        
-        
-            do{
+            
+        do{
                 try context.save()
                 print("Save!")
             }catch{
@@ -89,6 +93,8 @@ public class DoctorsToDBAndCache {
         
     }
     
+    
+    /// Delete data from sqlite DB
     func deleteAllData()  {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
@@ -109,7 +115,13 @@ public class DoctorsToDBAndCache {
 
     }
     
-       func getDoctorsFromDB() -> (Int, [Doctors]){
+    
+    
+    /// Retrieve data from sqlite
+    /// - returns
+    ///  1. numbers of data
+    ///  2. array of data
+    func getDataFromDB() -> (Int, [Doctors]){
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
                 return (0, [])
             }

@@ -17,9 +17,9 @@
 		A56A393C2373992C008FC4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56A393B2373992C008FC4E9 /* Assets.xcassets */; };
 		A56A394A2373992C008FC4E9 /* Celo_Tech_InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A39492373992C008FC4E9 /* Celo_Tech_InterviewTests.swift */; };
 		A56A395523739B60008FC4E9 /* DoctorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395423739B60008FC4E9 /* DoctorsTableViewController.swift */; };
-		A56A395723739F77008FC4E9 /* DoctorsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395623739F77008FC4E9 /* DoctorsRequest.swift */; };
-		A56A39592373A16B008FC4E9 /* DoctorsFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */; };
-		A56A395B2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */; };
+		A56A395723739F77008FC4E9 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395623739F77008FC4E9 /* DataRequest.swift */; };
+		A56A39592373A16B008FC4E9 /* DataFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A39582373A16B008FC4E9 /* DataFromJSON.swift */; };
+		A56A395B2373C1A4008FC4E9 /* DataToDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395A2373C1A4008FC4E9 /* DataToDB.swift */; };
 		A5E0FED8237753E90088E7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E0FED7237753E90088E7B3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +48,9 @@
 		A56A39492373992C008FC4E9 /* Celo_Tech_InterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celo_Tech_InterviewTests.swift; sourceTree = "<group>"; };
 		A56A394B2373992C008FC4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A56A395423739B60008FC4E9 /* DoctorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewController.swift; sourceTree = "<group>"; };
-		A56A395623739F77008FC4E9 /* DoctorsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsRequest.swift; sourceTree = "<group>"; };
-		A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsFromJSON.swift; sourceTree = "<group>"; };
-		A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsToDBAndCache.swift; sourceTree = "<group>"; };
+		A56A395623739F77008FC4E9 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		A56A39582373A16B008FC4E9 /* DataFromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFromJSON.swift; sourceTree = "<group>"; };
+		A56A395A2373C1A4008FC4E9 /* DataToDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataToDB.swift; sourceTree = "<group>"; };
 		A5E0FED7237753E90088E7B3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Celo Tech Interview/Views/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -126,9 +126,9 @@
 		A56A39632373DBE9008FC4E9 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */,
-				A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */,
-				A56A395623739F77008FC4E9 /* DoctorsRequest.swift */,
+				A56A395A2373C1A4008FC4E9 /* DataToDB.swift */,
+				A56A39582373A16B008FC4E9 /* DataFromJSON.swift */,
+				A56A395623739F77008FC4E9 /* DataRequest.swift */,
 				A5264CC22375FC3C0069CEA2 /* ImageCacheHelper.swift */,
 			);
 			path = Helper;
@@ -263,13 +263,13 @@
 			files = (
 				A55EDB752374C18200C2B255 /* DoctorCell.swift in Sources */,
 				A56A393A2373992B008FC4E9 /* DoctorsModel.xcdatamodeld in Sources */,
-				A56A395B2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift in Sources */,
+				A56A395B2373C1A4008FC4E9 /* DataToDB.swift in Sources */,
 				A56A39302373992B008FC4E9 /* AppDelegate.swift in Sources */,
 				A516C74F2374EC5200D9605F /* PopOverDoctorDetailViewController.swift in Sources */,
 				A56A395523739B60008FC4E9 /* DoctorsTableViewController.swift in Sources */,
-				A56A395723739F77008FC4E9 /* DoctorsRequest.swift in Sources */,
+				A56A395723739F77008FC4E9 /* DataRequest.swift in Sources */,
 				A5264CC32375FC3C0069CEA2 /* ImageCacheHelper.swift in Sources */,
-				A56A39592373A16B008FC4E9 /* DoctorsFromJSON.swift in Sources */,
+				A56A39592373A16B008FC4E9 /* DataFromJSON.swift in Sources */,
 				A56A39322373992B008FC4E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

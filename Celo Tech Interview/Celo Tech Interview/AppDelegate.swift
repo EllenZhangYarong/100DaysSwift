@@ -22,13 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let docsToDB = DoctorsToDBAndCache()
 //        docsToDB.getDataFromAPI(numberOfDocs: "1000")
         
-        let docsToDB = DoctorsToDBAndCache()
-        let results = docsToDB.getDoctorsFromDB()
+        let docsToDB = DataToDB()
+        let results = docsToDB.getDataFromDB()
         if results.0 == 0 {
             docsToDB.getDataFromAPI(numberOfDocs: "1000")
         }
         
-        sleep(2) //for showing launch screen.
+        sleep(10) //for showing launch screen.
         
         
         //Get data in background
@@ -39,11 +39,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    /// Get data in back mode
+    /// - Parameter task: fetch data
     func handleAppRefresh(task: BGAppRefreshTask){
         let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 1
         
-        let docsToDB = DoctorsToDBAndCache()
+        let docsToDB = DataToDB()
         
         queue.addOperation {
             docsToDB.getDataFromAPI(numberOfDocs: "200")

@@ -38,8 +38,8 @@ class DoctorsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let docsToDB = DoctorsToDBAndCache()
-        let results = docsToDB.getDoctorsFromDB()
+        let docsToDB = DataToDB()
+        let results = docsToDB.getDataFromDB()
         doctors = results.1
         sortedDoctors = doctors.sorted(by: {$0.lastName! < $1.lastName! })
 
@@ -54,8 +54,7 @@ class DoctorsTableViewController: UITableViewController {
         
         listOfInitialLastName = letters
                     
-            //construct data structure for table view
-           
+       //construct data structure for table view
        for i in 0..<listOfInitialLastName.count{
            
            var arrayDocs = [Doctors]()
@@ -90,6 +89,8 @@ class DoctorsTableViewController: UITableViewController {
         
     }
     
+    
+    //config Search Bar hidden
     func configureSearchBar()  {
         
         //Hiding search bar

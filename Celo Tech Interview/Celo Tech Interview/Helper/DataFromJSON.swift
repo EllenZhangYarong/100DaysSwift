@@ -2,6 +2,8 @@
 //  DoctorsDetail.swift
 //  Celo Tech Interview
 //
+//  Decode JSON content
+//
 //  Created by Ellen Zhang on 7/11/19.
 //  Copyright © 2019 Ellen Zhang. All rights reserved.
 //

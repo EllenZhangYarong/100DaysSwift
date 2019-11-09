@@ -24,27 +24,15 @@ class PopOverDoctorDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let docsToDB = DoctorsToDBAndCache()
-//        docsToDB.getDataFromAPI(numberOfDocs: "1000")
-//        docsToDB.deleteAllData()
         doctorNameLabel.text = doctor.title! + " " + doctor.firstName! + " " + doctor.lastName!
-//        doctorNameLabel.text = doctorName
         cellLabel.text = doctor.cell
         phoneLabel.text = doctor.phone
         cityLabel.text = doctor.city
         stateLabel.text = doctor.state
         countryLabel.text = doctor.country
-        
-        
+                
         let imageUrl = URL(string: doctor.large!)!
-        
-//        DispatchQueue.global().async {
-//            let data = try? Data(contentsOf: imageUrl!)
-//            DispatchQueue.main.async {
-//                self.doctorLargeImageView.image = UIImage(data: data!)
-//            }
-//        }
-        
+                
         ImageCacheHelper.getImage(withURL: imageUrl){
             image in
             self.doctorLargeImageView.image = image
