@@ -17,11 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // If this is the first time to run this app, please un-comment those two lines below.
 //        let docsToDB = DoctorsToDBAndCache()
 //        docsToDB.getDataFromAPI(numberOfDocs: "1000")
         
-        sleep(5)
+        sleep(2) //for showing launch screen.
         
+        
+        //Get data in background
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.ellenzhang.doctors", using: nil){
             (task) in
             self.handleAppRefresh(task: task as! BGAppRefreshTask)

@@ -11,7 +11,7 @@ import UIKit
 class PopOverDoctorDetailViewController: UIViewController {
 
     var doctorLargeImageName = ""
-    var doctor = Doctors.init()
+    var doctor = Doctors()
     
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var doctorNameLabel: UILabel!
