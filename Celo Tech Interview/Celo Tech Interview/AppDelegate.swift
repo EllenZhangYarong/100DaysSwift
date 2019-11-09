@@ -17,20 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
-        sleep(1)
-
+//        let docsToDB = DoctorsToDBAndCache()
+//        docsToDB.getDataFromAPI(numberOfDocs: "1000")
+        
+        sleep(5)
+        
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.ellenzhang.doctors", using: nil){
+            (task) in
+            self.handleAppRefresh(task: task as! BGAppRefreshTask)
+        }
         return true
     }
     
-//    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-//
-//        //Get Data from URL
-////        let docsToDB = DoctorsToDBAndCache()
-////        docsToDB.getDataFromAPI(numberOfDocs: "1000")
-////        docsToDB.deleteAllData()
-//        
-//    }
+    func handleAppRefresh(task: BGAppRefreshTask){
+        let queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 1
+        
+        let docsToDB = DoctorsToDBAndCache()
+        
+        queue.addOperation {
+            docsToDB.getDataFromAPI(numberOfDocs: "200")
+        }
+    
+    }
 
     // MARK: UISceneSession Lifecycle
 

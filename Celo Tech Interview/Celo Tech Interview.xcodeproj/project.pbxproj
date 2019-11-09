@@ -20,11 +20,7 @@
 		A56A395723739F77008FC4E9 /* DoctorsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395623739F77008FC4E9 /* DoctorsRequest.swift */; };
 		A56A39592373A16B008FC4E9 /* DoctorsFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */; };
 		A56A395B2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */; };
-		A56A395F2373CA84008FC4E9 /* firstpic.png in Resources */ = {isa = PBXBuildFile; fileRef = A56A395E2373CA84008FC4E9 /* firstpic.png */; };
-		A56A39612373CBBE008FC4E9 /* celo-health-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A56A39602373CBBE008FC4E9 /* celo-health-logo.png */; };
 		A56A396C23740F19008FC4E9 /* CustomLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56A396B23740F19008FC4E9 /* CustomLaunchScreen.storyboard */; };
-		A56A396E23740F8F008FC4E9 /* CustomLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A396D23740F8F008FC4E9 /* CustomLaunchScreenViewController.swift */; };
-		A56A3970237410F6008FC4E9 /* communication-saves-lives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A56A396F237410F6008FC4E9 /* communication-saves-lives.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +37,7 @@
 		A516C74E2374EC5200D9605F /* PopOverDoctorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverDoctorDetailViewController.swift; sourceTree = "<group>"; };
 		A5264CC22375FC3C0069CEA2 /* ImageCacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheHelper.swift; sourceTree = "<group>"; };
 		A55EDB742374C18200C2B255 /* DoctorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCell.swift; sourceTree = "<group>"; };
-		A56A392C2373992B008FC4E9 /* Celo Tech Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celo Tech Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56A392C2373992B008FC4E9 /* EllenTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EllenTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56A392F2373992B008FC4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56A39312373992B008FC4E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A56A39362373992B008FC4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,11 +51,7 @@
 		A56A395623739F77008FC4E9 /* DoctorsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsRequest.swift; sourceTree = "<group>"; };
 		A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsFromJSON.swift; sourceTree = "<group>"; };
 		A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsToDBAndCache.swift; sourceTree = "<group>"; };
-		A56A395E2373CA84008FC4E9 /* firstpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstpic.png; sourceTree = "<group>"; };
-		A56A39602373CBBE008FC4E9 /* celo-health-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "celo-health-logo.png"; sourceTree = "<group>"; };
 		A56A396B23740F19008FC4E9 /* CustomLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomLaunchScreen.storyboard; sourceTree = "<group>"; };
-		A56A396D23740F8F008FC4E9 /* CustomLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenViewController.swift; sourceTree = "<group>"; };
-		A56A396F237410F6008FC4E9 /* communication-saves-lives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "communication-saves-lives.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +84,7 @@
 		A56A392D2373992B008FC4E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A56A392C2373992B008FC4E9 /* Celo Tech Interview.app */,
+				A56A392C2373992B008FC4E9 /* EllenTech.app */,
 				A56A39452373992C008FC4E9 /* Celo Tech InterviewTests.xctest */,
 			);
 			name = Products;
@@ -127,7 +119,6 @@
 			children = (
 				A516C74E2374EC5200D9605F /* PopOverDoctorDetailViewController.swift */,
 				A56A395423739B60008FC4E9 /* DoctorsTableViewController.swift */,
-				A56A396D23740F8F008FC4E9 /* CustomLaunchScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,9 +155,6 @@
 		A56A39662373DC54008FC4E9 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				A56A396F237410F6008FC4E9 /* communication-saves-lives.jpg */,
-				A56A395E2373CA84008FC4E9 /* firstpic.png */,
-				A56A39602373CBBE008FC4E9 /* celo-health-logo.png */,
 				A56A393B2373992C008FC4E9 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
@@ -189,7 +177,7 @@
 			);
 			name = "Celo Tech Interview";
 			productName = "Celo Tech Interview";
-			productReference = A56A392C2373992B008FC4E9 /* Celo Tech Interview.app */;
+			productReference = A56A392C2373992B008FC4E9 /* EllenTech.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A56A39442373992C008FC4E9 /* Celo Tech InterviewTests */ = {
@@ -253,12 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56A3970237410F6008FC4E9 /* communication-saves-lives.jpg in Resources */,
 				A56A393C2373992C008FC4E9 /* Assets.xcassets in Resources */,
 				A56A396C23740F19008FC4E9 /* CustomLaunchScreen.storyboard in Resources */,
 				A56A39372373992B008FC4E9 /* Main.storyboard in Resources */,
-				A56A39612373CBBE008FC4E9 /* celo-health-logo.png in Resources */,
-				A56A395F2373CA84008FC4E9 /* firstpic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +270,6 @@
 				A56A395723739F77008FC4E9 /* DoctorsRequest.swift in Sources */,
 				A5264CC32375FC3C0069CEA2 /* ImageCacheHelper.swift in Sources */,
 				A56A39592373A16B008FC4E9 /* DoctorsFromJSON.swift in Sources */,
-				A56A396E23740F8F008FC4E9 /* CustomLaunchScreenViewController.swift in Sources */,
 				A56A39322373992B008FC4E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,10 +431,10 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ellenzhang.Celo-Tech-Interview";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EllenTech;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,10 +451,10 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ellenzhang.Celo-Tech-Interview";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EllenTech;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

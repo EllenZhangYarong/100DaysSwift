@@ -175,30 +175,28 @@ class DoctorsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if indexPath.row == 0 {
+            
             if tableViewData[indexPath.section].opened == true{
                 tableViewData[indexPath.section].opened = false
-                
             }else{
                 tableViewData[indexPath.section].opened = true
             }
+            
             let sections = IndexSet.init(integer: indexPath.section)
             tableView.reloadSections(sections, with: .none)
+            
         }else{
-            print(tableViewData[indexPath.section].sectionData[indexPath.row-1].firstName!)
             
             let vc = (storyboard?.instantiateViewController(identifier: "PopOverDoctorDetailViewController") as? PopOverDoctorDetailViewController)!
+            
             if isSearch {
-                vc.doctorLargeImageName = filteredData[indexPath.section][indexPath.row - 1].large!
-//                vc.doctorName = filteredData[indexPath.section][indexPath.row - 1].firstName! + " " + filteredData[indexPath.section][indexPath.row - 1].lastName!
                 vc.doctor = filteredData[indexPath.section][indexPath.row - 1]
             }else{
-                vc.doctorLargeImageName = tableViewData[indexPath.section].sectionData[indexPath.row-1].large!
-//                vc.doctorName = tableViewData[indexPath.section].sectionData[indexPath.row-1].firstName! + " " + tableViewData[indexPath.section].sectionData[indexPath.row-1].lastName!
                 vc.doctor = tableViewData[indexPath.section].sectionData[indexPath.row-1]
             }
-            
-            
+                        
             self.navigationController?.pushViewController(vc, animated: false)
         }
     }
