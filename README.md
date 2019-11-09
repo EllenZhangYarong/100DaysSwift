@@ -38,3 +38,12 @@
 
 ## 20180827 [DropDown Menu](https://www.youtube.com/watch?v=dIKK-SCkh_c)
 
+## 201808 -- 201810 an app for a B2C website. From design to coding. v0.1 done.
+1. communicate with the server using restful API
+2. decode and encode Jason file
+3. Table view - Table view cell - Custom table view cell
+4. slide menu - container view, auto layout constraints
+5. Stack view - drag component and programmatically generate stack view, add components into it
+6. Tab bar controller and Navigation controller
+7. Notification center
+8. More
