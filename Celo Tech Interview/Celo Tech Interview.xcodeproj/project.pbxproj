@@ -20,7 +20,7 @@
 		A56A395723739F77008FC4E9 /* DoctorsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395623739F77008FC4E9 /* DoctorsRequest.swift */; };
 		A56A39592373A16B008FC4E9 /* DoctorsFromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */; };
 		A56A395B2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */; };
-		A56A396C23740F19008FC4E9 /* CustomLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56A396B23740F19008FC4E9 /* CustomLaunchScreen.storyboard */; };
+		A5E0FED8237753E90088E7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E0FED7237753E90088E7B3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		A56A395623739F77008FC4E9 /* DoctorsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsRequest.swift; sourceTree = "<group>"; };
 		A56A39582373A16B008FC4E9 /* DoctorsFromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsFromJSON.swift; sourceTree = "<group>"; };
 		A56A395A2373C1A4008FC4E9 /* DoctorsToDBAndCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsToDBAndCache.swift; sourceTree = "<group>"; };
-		A56A396B23740F19008FC4E9 /* CustomLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomLaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E0FED7237753E90088E7B3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Celo Tech Interview/Views/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				A56A39352373992B008FC4E9 /* Main.storyboard */,
-				A56A396B23740F19008FC4E9 /* CustomLaunchScreen.storyboard */,
+				A5E0FED7237753E90088E7B3 /* LaunchScreen.storyboard */,
 				A55EDB742374C18200C2B255 /* DoctorCell.swift */,
 			);
 			path = Views;
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56A393C2373992C008FC4E9 /* Assets.xcassets in Resources */,
-				A56A396C23740F19008FC4E9 /* CustomLaunchScreen.storyboard in Resources */,
+				A5E0FED8237753E90088E7B3 /* LaunchScreen.storyboard in Resources */,
 				A56A39372373992B008FC4E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,8 +38,11 @@ class DoctorsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        _ = getDoctorsFromDB()
+        let docsToDB = DoctorsToDBAndCache()
+        let results = docsToDB.getDoctorsFromDB()
+        doctors = results.1
+        sortedDoctors = doctors.sorted(by: {$0.lastName! < $1.lastName! })
+
 
         // Generate an alphabet list for initial of name.
         let aScalars = "a".unicodeScalars
@@ -97,40 +100,12 @@ class DoctorsTableViewController: UITableViewController {
         
     }
     
-    func getDoctorsFromDB() -> Int{
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
-            return 0
-        }
-        let context = appDelegate.persistentContainer.viewContext
-//        let context = CoreDataHelper.sharedManager.persistentContainer.viewContext
-                
-//        Fetch doctors from core data db
-        let fetchRequest : NSFetchRequest<Doctors> = Doctors.fetchRequest()
-        do {
-            doctors = try context.fetch(fetchRequest)
-            sortedDoctors = doctors.sorted(by: {$0.lastName! < $1.lastName! })
-//            print("sorted doctors \(sortedDoctors.count)")
-        }catch{
-            print("Error fetching data! \(error)")
-        }
-        return sortedDoctors.count
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-//        //Get Data from URL
-        let numsOfDocs = getDoctorsFromDB()
-        if numsOfDocs == 0 {
-            let docsToDB = DoctorsToDBAndCache()
-            docsToDB.getDataFromAPI(numberOfDocs: "1000")
-////            docsToDB.deleteAllData()
-        }
-    }
-    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
 //        print(tableViewData.count)
         return tableViewData.count
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSearch{
@@ -148,6 +123,7 @@ class DoctorsTableViewController: UITableViewController {
         }
         
     }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -209,14 +185,13 @@ class DoctorsTableViewController: UITableViewController {
                 self.pageNo=self.pageNo+1
                 self.limit=self.limit+10
                 self.offset=self.limit * self.pageNo
-//                loadCallLogData(offset: self.offset, limit: self.limit)
-
             }
         }
     }
 }
 
 extension DoctorsTableViewController: UISearchBarDelegate{
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
 //        shouldBeOpenedSection.removeAll()
         filteredData.removeAll()
@@ -224,9 +199,12 @@ extension DoctorsTableViewController: UISearchBarDelegate{
         tableView.reloadData()
         
     }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
         filteredData.removeAll()
         isSearch = true
+        
         let searchString = searchController.searchBar.text!
         
         for cellData in tableViewData{
@@ -246,7 +224,6 @@ extension DoctorsTableViewController: UISearchBarDelegate{
                 for doctor in filteredContent{
                     arrayDocs.append(doctor)
                 }
-//
             }
             
 //            print(arrayDocs.count)

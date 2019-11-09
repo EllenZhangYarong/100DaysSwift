@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 import CoreData
 
-var listOfDocs: [DoctorDetail]=[]
 
 
 public class DoctorsToDBAndCache {
     
     var arrayDocs:[Doctors]=[]
-    
+    var listOfDocs: [DoctorDetail]=[]
+    var doctors: [Doctors] = []
+
     func getDataFromAPI(numberOfDocs: String){
         let doctorsRequest = DoctorsRequest(numberOfDocs: numberOfDocs)
         doctorsRequest.getDoctors{ result in
@@ -32,8 +33,6 @@ public class DoctorsToDBAndCache {
                     
             }
         }
-        
-        
     }
     
     func saveDataToDB(listOfDocs: [DoctorDetail]){
@@ -109,5 +108,23 @@ public class DoctorsToDBAndCache {
         }
 
     }
+    
+       func getDoctorsFromDB() -> (Int, [Doctors]){
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+                return (0, [])
+            }
+            let context = appDelegate.persistentContainer.viewContext
+    //        let context = CoreDataHelper.sharedManager.persistentContainer.viewContext
+                    
+    //        Fetch doctors from core data db
+            let fetchRequest : NSFetchRequest<Doctors> = Doctors.fetchRequest()
+            do {
+                doctors = try context.fetch(fetchRequest)
+    //            print("sorted doctors \(sortedDoctors.count)")
+            }catch{
+                print("Error fetching data! \(error)")
+            }
+            return (doctors.count, doctors)
+        }
 
 }

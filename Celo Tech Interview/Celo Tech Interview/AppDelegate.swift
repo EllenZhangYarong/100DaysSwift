@@ -18,8 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // If this is the first time to run this app, please un-comment those two lines below.
+        
 //        let docsToDB = DoctorsToDBAndCache()
 //        docsToDB.getDataFromAPI(numberOfDocs: "1000")
+        
+        let docsToDB = DoctorsToDBAndCache()
+        let results = docsToDB.getDoctorsFromDB()
+        if results.0 == 0 {
+            docsToDB.getDataFromAPI(numberOfDocs: "1000")
+        }
         
         sleep(2) //for showing launch screen.
         
