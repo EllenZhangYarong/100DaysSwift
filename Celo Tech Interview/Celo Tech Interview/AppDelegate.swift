@@ -28,9 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             docsToDB.getDataFromAPI(numberOfDocs: "1000")
         }
         
-        sleep(10) //for showing launch screen.
-        
-        
+        sleep(2) //for showing launch screen.
+                
         //Get data in background
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.ellenzhang.doctors", using: nil){
             (task) in
