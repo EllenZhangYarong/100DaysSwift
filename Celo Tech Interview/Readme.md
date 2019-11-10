@@ -10,11 +10,25 @@
 
 - NOTE: the project app need to be able to work offline, therefore SQLite local storage and CoreData framework are required for this challenge.
 
-### The important things we are looking for:
+### The important things:
 
 - Good coding standard
 - Maintainable application architecture
 - Testing
+
+### Some Screen Shots of this app
+
+- ![app icon](images/appicon.png)
+
+- ![app icon](images/launchscreen.png)
+
+- ![app icon](images/defaultpage.png)
+
+- ![app icon](images/detail.png)
+
+- ![app icon](images/search.png)
+
+- ![app icon](images/aftersearch.png)
 
 
 
