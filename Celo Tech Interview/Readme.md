@@ -20,15 +20,30 @@
 
 - ![app icon](images/appicon.png)
 
-- ![app icon](images/launchscreen.png)
+- ![launchscreen](images/launchscreen.png)
 
-- ![app icon](images/defaultpage.png)
+- ![the main page](images/defaultpage.png)
 
-- ![app icon](images/detail.png)
+- ![detail page](images/detail.png)
 
-- ![app icon](images/search.png)
+- ![search function](images/search.png)
 
-- ![app icon](images/aftersearch.png)
+- ![search results](images/aftersearch.png)
+
+### Skills used in this app
+1. Cache image from URL
+2. Background fetch
+3. TableView
+4. Custome TableviewCell
+5. Expanding table view cell
+6. Search object
+7. Filter data/ Sorted data
+8. Fetch data from Restful API
+9. Core data
+
+### Need to improve
+1. Pagination
+2. UnitTest
 
 
 
